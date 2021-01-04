@@ -1,0 +1,532 @@
+@charset "UTF-8";
+
+.container  {
+    width: 960px;
+    height: auto;
+}
+
+.contents-wrapper {
+    width: 100%;
+}
+/* 본문 페이지 내의 구분 선 속성 */
+.hr-bdline {
+    width: 1020px;
+    height: 2px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    left: -1em;
+    top: -5em;
+    position: relative;
+}
+/* 본문 페이지 상단의 페이지 정보와 단계 정보를 나타내는 영역*/
+.contents-page-upper {
+    display: flex;
+    position: relative;
+    top: -10em;
+    padding-left: 3em;
+    width: 960px;
+    height: 130px;
+    text-align: center;
+    border-bottom: 2px double;
+}
+
+.contents-page-upper div {
+    box-sizing: border-box;
+    line-height: 1.8em;
+}
+
+.contents-page-upper div.active{
+    background-color: red;
+    color: white;
+}
+
+.contents-page-upper p {
+    font-weight: bold;
+}
+
+.page-info {
+    width: 240px;
+    font-size: 30px;
+    margin-top: 0.9em;
+    margin-right: 10em;
+}
+
+.progress-step1 {
+    width: 100px;
+    height: 100px;
+    padding: 22px 10px 12px 10px;
+    background-color: rgb(150,150,150);
+    color: white;
+    border-radius: 100px;
+    margin-top: 0.4em;
+    margin-right: 1.5em;
+}
+
+.progress-step2 {
+    width: 100px;
+    height: 100px;
+    padding: 22px 10px 12px 10px;
+    background-color: rgb(150,150,150);
+    color: white;
+    border-radius: 100px;
+    margin-top: 0.4em;
+    margin-right: 1.5em;
+}
+
+.progress-step3 {
+    width: 100px;
+    height: 100px;
+    padding: 22px 10px 12px 10px;
+    background-color: rgb(150,150,150);
+    color: white;
+    border-radius: 100px;
+    margin-top: 0.4em;
+}
+/* upper 영역 종료*/
+
+/* 페이지 중간의 영역으로 결제 상품의 정보 및 결제에 필요한 약관 등을 표시 */
+.contents-page-middle {
+    margin: 0 auto;
+    width: 60em;
+    position: relative;
+    top: -8.7em;
+    white-space: pre-wrap;
+    word-break: keep-all;
+}
+
+.contents-page-middle p {
+    margin-left: 5em;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* 약관 text-box */
+.payments-terms {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 960px;
+    position: relative;
+    top: -2em;
+}
+
+.payments-terms pre {
+    margin-left: 5.5em;
+    margin-top: -1em;
+    padding-left: 0;
+    padding-top: 1em;
+    width: 780px;
+    height: 180px;
+    position: relative;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    word-break: normal;
+    line-height: 1.3em;
+    font-size: 13px;
+    border: 2px solid;
+    overflow-y: scroll;
+}
+
+.ok-or-not {
+    position: relative;
+    left: -1.5em;
+    margin-right: 1em;
+}
+
+.contents-page-middle p:last-child {
+    position: relative;
+    top: -1.33em;
+    left: 3.5em;
+}
+
+.contents-page-middle p:last-child > span{
+    font-weight: normal;
+}
+/* 구매한 상품 정보 등의 출력 영역 */
+.payments-item-info {
+    position: relative;
+    overflow: visible;
+    top: -5.5em;
+    left: -1.7em;
+}
+
+.cart-go {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    top: 3.5em;
+    right: 1.5em;
+    border: 1px solid;
+    border-radius: 5px;
+    z-index: 1;
+}
+/* 구매 상품의 정보를 table 형식으로 출력*/
+.item {
+    width: 95%;
+    box-sizing: content-box;
+    position: relative;
+    top: -3.9em;
+    padding-left: 2.7em;
+}
+
+.item p {
+    margin: 0;
+    padding: 0;
+}
+
+.item-table {
+    width: 100%;
+}
+
+.item-img-zone {
+    width: 17%;
+}
+
+.item-img {
+    margin: 0 auto;
+    margin-left: 1.5em;
+    width: 100px;
+    height: 120px;
+}
+
+.item-name-zone {
+    width: 45%;
+    white-space: pre-wrap;
+    word-break: normal;
+}
+
+.item-name {
+    margin-left: 1em;
+}
+
+.item-num-zone {
+    width: 3em;
+}
+
+.item-num {
+    position: relative;
+    left: -1.8em;
+}
+
+.item-price-zone {
+    width: 6.2em;
+}
+
+.item-price {
+    position: relative;
+    left: -1.4em;
+}
+
+.item-discount-zone {
+    width: 5.5em;
+}
+
+.item-discount {
+    position: relative;
+    left: -1.4em;
+}
+
+.result-cost-zone {
+    width: 5.5em;
+}
+
+.result-cost {
+    position: relative;
+    left: -2.4em;
+}
+
+.item-table th{
+    background-color: rgb(165, 165, 165);
+    color: rgb(55, 55, 55);
+}
+
+.item-table th, .item-table td {
+    padding: 10px 0;
+}
+
+.item-table td:nth-child(2) {
+    text-align: left;
+}
+/* middle 영역 종료 */
+
+/* 결제 및 배송에 필요한 정보를 다루는 영역 wrapper */
+.contents-page-footer {
+    position: relative;
+    top: -17em;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    
+}
+/* 상위 footer 페이지는 section과 aside로 나뉘어 있습니다 */
+/* 해당 section은 페이지 좌측 부분 */
+.page-footer-left {
+    float: left;
+    width: 75%;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.page-footer-left > p {
+    margin-left: 1.9em;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.page-footer-left > div {
+    width: 90%;
+    height: 80em;
+    margin-top: 3em;
+    padding: 0 1em 0 1em;
+    box-sizing: border-box;
+}
+
+.logistics-info {
+    width: 100%;
+    box-sizing: border-box;
+    white-space: pre-line;
+}
+
+.logistics-info td:first-child{
+    width: 150px;
+    height: 30%;
+    box-sizing: border-box;
+    padding-right: 0.3em;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(225, 225, 225);
+    border: 1px solid;
+    border-right: none;
+}
+
+.logistics-info td:last-child{
+    width: 80%;
+    height: 30%;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-left: 1px solid grey;
+    border-bottom: 1px dotted grey; 
+    padding-left: 2em;
+    padding-bottom: 2em;
+    line-height: 3em;
+}
+
+.logistics-info td:last-child > label {
+    float: left;
+}
+
+.logistics-info td:last-child > input {
+    float: right;
+    width: 15em;
+    margin-top: 0.85em;
+    margin-right: 2em;
+}
+
+.logistics-info tr:nth-of-type(2) > td{
+    border-top: none;
+}
+
+.logistics-info tr:nth-of-type(3) > td{
+    border-top: none;
+}
+
+.logistics-info tr:nth-of-type(4) > td{
+    border-top: none;
+    border-bottom: 1px solid;
+}
+
+.logistics-info tr:nth-of-type(2) > td > input.chk {
+    position: relative;
+    left: -6.5em;
+}
+
+.logistics-info tr:nth-of-type(2) > td > p.right {
+    float: right;
+    position: relative;
+    top: -0.4em;
+    left: 11em;
+    font-size: 13px;
+}
+
+.logistics-info tr:nth-of-type(2) select {
+    position: relative;
+    top: -2.3em;
+    left: 9.2em;
+}
+
+.logistics-info tr:nth-of-type(2) > td:nth-of-type(2) > label:nth-of-type(2) {
+    margin-top: 1em;
+}
+
+.logistics-info tr:nth-of-type(2) > td:nth-of-type(2) > input:nth-of-type(3) {
+    position: relative;
+    width: 140px;
+    top: -2em;
+}
+
+.logistics-info tr:nth-of-type(2) > td:nth-of-type(2) > select:nth-of-type(2) {
+    position: relative;
+    top: -3.5em;
+    left: 16.7em;
+}
+
+.logistics-info tr:nth-of-type(2) > td:nth-of-type(2) > input:nth-of-type(4) {
+    position: relative;
+    width: 140px;
+    top: -3.3em;
+}
+
+.logistics-info tr:nth-of-type(2) > td:nth-of-type(2) > button {
+    position: relative;
+    top: -0.1em;
+    left: 5em;
+}
+
+.logistics-info tr:nth-of-type(2) > td:nth-of-type(2) > input:nth-of-type(5) {
+    position: relative;
+    width: 210px;
+    top: 0.2em;
+}
+
+.logistics-info tr:nth-of-type(3) > td:nth-of-type(2) > select {
+    position: relative;
+    top: 1.2em;
+}
+
+.self-input > input {
+    float: right;
+    position: relative;
+    top: -1.3em;
+    width: 230px;
+    margin-right: 2em;
+}
+
+.logistics-info tr:last-of-type > td:nth-of-type(2) {
+    display: flexbox;
+    box-sizing: border-box;
+    padding: 1em 2em 1em 1em;
+    text-align: right;
+}
+
+.logistics-info tr:last-of-type > td:nth-of-type(2) > p{
+    display: inline-block;
+}
+/* 결제수단 선택 버튼 */
+.payment-select {
+    position: relative;
+    top: -20em;    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.payment-select > p:first-of-type {
+    margin-left: 1.9em;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* 다음 이용시 재적용 여부를 묻는 text, checkbox를 포함한 영역 */
+.payment-select-right {
+    float: right;
+    width: 100%;
+    display: flex;
+    margin-bottom: 1em;
+    padding-left: 50%;
+    font-size: 14px;
+}
+
+.payment-select-right > input{
+    margin: 0.1em 0.7em 0 1em;
+}
+
+.payment-btn-zone {
+    display: flexbox;
+    padding-left: 0.5em;
+}
+
+.payment-btn-zone button {
+    width: 10em;
+    height: 4em;
+    margin: 0 0.3em 0.8em 0.5em;
+    background-color: white;
+    border: 1px solid rgb(225, 225, 225);
+}
+/* 카드사 별 할부 이벤트 내용을 table 형식으로 출력 */
+.creditcard-info {
+    width: 10em;
+    margin-top: 1em;
+}
+
+.creditcard-info > p{
+    margin-left: 1.9em;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.creditcard-info > table {
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.creditcard-info > table tr td {
+    padding: 1em 2em 1em 2em;
+    border: 1px solid;
+    text-align: center;
+}
+
+.creditcard-info > table tr td:nth-of-type(2) {
+    width: 20%;
+}
+
+.creditcard-info > table tr td:nth-of-type(3) {
+    width: 20%;
+}
+
+.creditcard-info > table tr td:nth-of-type(4) {
+    width: 20%;
+}
+
+/* 해당 aside는 페이지 우측 부분 */
+.page-footer-right{
+    position: relative;
+    float: right;    
+    width: 25%;
+    height: 400px;
+    top: 4.5em;
+    padding: 1em;
+    background-color: rgb(225, 225, 225);
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.cost-info-zone > div > table tr td {
+    width: 50%;
+    text-align: left;    
+    font-size: 14px;
+    padding-bottom: 1em;
+}
+
+.cost-info-zone > div > table tr td:last-of-type {
+    text-align: right;
+}
+
+.cost-info-zone > p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3em;
+}
+
+.page-footer-right > button {
+    width: 100%;
+    height: 3.7em;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    border: none;
+    background-color: rgb(255, 50, 50);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    
+}

@@ -1,0 +1,20 @@
+
+/* .card {
+    flex-basis: 30%;
+    height: 35rem;
+} */
+
+.header-filter-box-footer {
+    margin-top: 1em;
+
+    justify-content: center;
+}
+
+.header-filter-box-footer .input-non-border-box {
+    height: 2em;
+    line-height: 2em;
+
+    background-color: #EBEEF0;
+    filter: grayscale(1.0);
+    
+}
